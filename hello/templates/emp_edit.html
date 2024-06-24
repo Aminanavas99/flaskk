@@ -1,0 +1,24 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Profile</h1>
+    
+    <form action="/emp_update/{{ data['id'] }}" method="post">
+        Name: <input type="text" name="fname" value="{{ data['name'] }}"><br>
+        Email: <input type="email" name="email" value="{{ data['email'] }}"><br>
+        Phone: <input type="number" name="phone" value="{{ data['phone'] }}"><br>
+        <input type="submit" value="UPDATE">
+    </form>
+    
+    
+    
+</body>
+</html>
