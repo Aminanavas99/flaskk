@@ -51,9 +51,11 @@ def emp_list():
     con.row_factory=sqlite3.Row
     # , it returns rows as dictionary-like objects. 
     # can access column values by their names rather than by index.
+    print(con)
     cur=con.cursor()
     cur.execute("select * from Employee")
     rows=cur.fetchall()
+    print(rows)
 
     return render_template('emp_list.html',data=rows)
 
